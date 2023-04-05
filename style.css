@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Bebas+Neue&family=Blinker:wght@100;200;700&family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blinker:wght@100;200;700&family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    /* padding: 0.5rem 5rem; */
+    z-index: 1000;
+}
+
+.navbar .navbar-brand{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    font-size: 1rem;
+    padding: 0 1rem; 
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color: #c180fa;
+}
+
+#navbarSupportedContent > button{
+    background: #c180fa;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    color: white;
+    border: none;
+}
+.mid   {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.mid video{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+#button{
+    background-color: #c180fa;
+}
+
+
+
+
+
+/* ----------------------------- landing page --------------------- */
+
+
+
+
+
+.hero{
+    margin-left: 5em;
+    /* z-index: 100; */
+}
+.hero h1{
+    font-weight: 800;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero h2{
+    font-weight: 300;
+    font-size: 3em;
+    color: white;
+    padding-bottom: 1.2rem;
+}
+
+.hero p{
+    font-weight: 200;
+    font-size: 1em;
+    width: 55%;
+    color: white;
+    letter-spacing: 0.2px;
+    margin-bottom: 2.5rem;
+}
+
+.hero a{
+    text-decoration: none;
+    color: #4012A1;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.hero a:hover{
+    background-color: #c180fa;
+    color: white;
+}
+
+
+@media(max-width:786px){
+    .hero h1{
+        font-size: 3.5em;
+    }
+    .hero h2{
+        font-size: 2em;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+    .vayam .text h2{
+        font-size: 1em;
+    }
+}
+@media(max-width:450px){
+    .hero h1{
+        font-size: 2.5em;
+    }
+    .hero h2{
+        font-size: 1.5em;
+    }
+    .navbar .navbar-brand{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
+@media(max-width:320px){
+    .hero h1{
+        font-size: 1.5em;
+    }
+    .hero h2{
+        font-size: 1em;
+    }
+    .hero p{
+        font-size: 0.8em;
+    }
+}
+
+
+/* ----------------------------- what is vayam --------------------- */
+
+
+
+
+
+.vayam{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(160%2c 140%2c 217%2c 1)'%3e%3c/rect%3e%3cpath d='M-189.35 245.97 a285.88 285.88 0 1 0 571.76 0 a285.88 285.88 0 1 0 -571.76 0z' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1199.235%2c554.194C1280.222%2c555.71%2c1374.448%2c555.305%2c1415.25%2c485.331C1456.213%2c415.079%2c1412.269%2c331.475%2c1369.394%2c262.373C1329.602%2c198.241%2c1274.625%2c140.736%2c1199.235%2c137.177C1118.026%2c133.344%2c1040.34%2c175.008%2c998.776%2c244.879C956.286%2c316.305%2c951.59%2c407.754%2c996.789%2c477.497C1038.853%2c542.403%2c1121.905%2c552.746%2c1199.235%2c554.194' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M988.76 810.81 a281.65 281.65 0 1 0 563.3 0 a281.65 281.65 0 1 0 -563.3 0z' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-61.45 983.55 a293.32 293.32 0 1 0 586.64 0 a293.32 293.32 0 1 0 -586.64 0z' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1019.91 834.76 a333.93 333.93 0 1 0 667.86 0 a333.93 333.93 0 1 0 -667.86 0z' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1646.093%2c782.922C1678.657%2c781.022%2c1702.652%2c756.677%2c1719.655%2c728.84C1737.657%2c699.366%2c1752.08%2c664.937%2c1737.192%2c633.773C1720.484%2c598.799%2c1684.853%2c574.787%2c1646.093%2c574.857C1607.439%2c574.927%2c1574.216%2c600.245%2c1555.563%2c634.101C1537.584%2c666.734%2c1536.632%2c706.556%2c1555.995%2c738.387C1574.656%2c769.064%2c1610.247%2c785.013%2c1646.093%2c782.922' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1664.323%2c664.591C1711.787%2c662.352%2c1755.926%2c639.856%2c1779.948%2c598.859C1804.241%2c557.399%2c1803.951%2c506.929%2c1781.643%2c464.368C1757.506%2c418.319%2c1716.241%2c381.019%2c1664.323%2c378.266C1607.759%2c375.267%2c1551.909%2c401.796%2c1523.276%2c450.669C1494.354%2c500.034%2c1496.63%2c562.973%2c1528.123%2c610.738C1556.926%2c654.422%2c1612.056%2c667.057%2c1664.323%2c664.591' fill='rgba(109%2c 72%2c 191%2c 0.68)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");;
+    background-repeat: none;
+    /* height: 100%; */
+}
+
+.vayam .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+}
+.vayam .text h2{
+    font-weight: 600;
+    font-size: 6rem;
+    color: white;
+}
+
+.vayam .text .style{
+    color: #1F0C83;
+    text-transform: uppercase;
+    font-family: "bebas neue", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.vayam .text p{
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    /* letter-spacing: 1px; */
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 5em;
+}
+
+@media(max-width:1176px){
+    .sponsor h1{
+        font-weight: 800;
+        font-size: 8rem;
+    }
+    .reward h1{
+        font-weight: 800;
+        font-size: 8rem;
+    }
+}
+@media(max-width:556px){
+    .vayam .text h2{
+        font-size: 4rem;
+    }
+}
+
+
+
+
+/* ----------------------------- landing page --------------------- */
+
+
+
+
+.box{
+    border: 1px solid black;
+}
+
+.insta a{
+    text-decoration: none;
+    color: black;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.instapic{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+.myteam .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.extratop{
+    border-top: none;
+}
+
+.extrabottom{
+    border-bottom: none;
+}
+
+
+
+
+/* ----------------------------- sponsor --------------------- */
+
+
+
+
+.sponsor{
+    background-image: url(assets/sponsorbg.jpg);
+    color: white;
+}
+
+.sponsor h1{
+    font-weight: 800;
+    font-size: 12rem;
+}
+
+.sponsor h4{
+    color: white;
+}
+
+.sponsor h3{
+    font-weight: 500;
+}
+
+.sponsor img{
+    width: 50rem;
+    height: 20rem;
+}
+
+
+
+
+/* ----------------------------- rewards --------------------- */
+
+
+
+
+.reward{
+    color: #08054F;
+    /* background-color: #828DDD; */
+}
+.reward h1{
+    font-weight: 800;
+    font-size: 12rem;
+}
+
+.reward h2{
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+@media(max-width:1176px){
+    .sponsor h1{
+        font-weight: 800;
+        font-size: 8rem;
+    }
+    .reward h1{
+        font-weight: 800;
+        font-size: 8rem;
+    }
+    .reward h2{
+        font-weight: 700;
+        font-size: 4rem;
+    }
+}
+@media(max-width:786px){
+    .sponsor h1{
+        font-weight: 800;
+        font-size: 6rem;
+    }
+    .reward h1{
+        font-weight: 800;
+        font-size: 6rem;
+    }
+    .reward h2{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+}
+@media(max-width:538px){
+    .sponsor h1{
+        font-weight: 800;
+        font-size: 4rem;
+    }
+    .reward h1{
+        font-weight: 800;
+        font-size: 4rem;
+    }
+    .sponsor h3{
+        font-size: 2rem;
+    }
+    .reward h2{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+@media(max-width:365px){
+    .sponsor h1{
+        font-weight: 800;
+        font-size: 3rem;
+    }
+    .reward h1{
+        font-weight: 800;
+        font-size: 3rem;
+    }
+    .sponsor h3{
+        font-size: 1.6rem;
+    }
+    .reward h2{
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+/* ----------------------------- vayam registration --------------------- */
+
+
+
+
+
+
+.register{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(128%2c 125%2c 188%2c 1)'%3e%3c/rect%3e%3cpath d='M597.844%2c475.681C684%2c476.815%2c780.14%2c469.408%2c825.534%2c396.173C872.625%2c320.2%2c845.527%2c224.925%2c801.486%2c147.144C756.639%2c67.939%2c688.864%2c-5.927%2c597.844%2c-5.949C506.797%2c-5.971%2c437.849%2c67.235%2c394.034%2c147.046C352.142%2c223.353%2c334.423%2c316.337%2c380.302%2c390.315C424.305%2c461.268%2c514.361%2c474.583%2c597.844%2c475.681' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M217.609%2c835.505C273.415%2c832.434%2c308.752%2c782.499%2c336.76%2c734.133C364.858%2c685.612%2c392.857%2c628.896%2c365.641%2c579.875C337.918%2c529.941%2c274.672%2c517.104%2c217.609%2c519.518C165.239%2c521.733%2c117.716%2c547.186%2c89.787%2c591.543C59.72%2c639.295%2c47.159%2c698.647%2c73.348%2c748.631C101.27%2c801.922%2c157.537%2c838.811%2c217.609%2c835.505' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-12.223562971098914 158.97727413873358L156.53515694625187 36.61244457299793-8.612895800025228-40.39735715197668z' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-227.13667234535654 677.3288462529699L32.597569136108405 846.0022348844288 201.27095776756738 586.267993402964-58.46328371389757 417.594604771505z' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M571.5007241004557 680.751705323387L429.7526697393947 640.1061047950641 439.6582961274409 873.050986600817z' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1569.2640805115623 538.7417444005023L1435.8706821020291 671.8811313078517 1594.2385431201828 717.2923847072994z' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1572.055793323432 848.6248660280532L1446.4162118439442 978.728461262023 1704.3913954346428 1102.1360358642696z' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M371.2581690934599 1030.2744704187708L484.48441354572356 908.8541887145574 245.74086876327172 799.7249628882687z' fill='rgba(74%2c 70%2c 159%2c 0.73)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.registration{
+    display: flex;
+
+}
+.row .one{
+    background-image: url(assets/Sprinkle.svg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    text-decoration: none;
+}
+
+/* .row .one h4{
+    padding: 2rem;
+    text-decoration: none;
+} */
+
+.row .two{
+    background-image: url(assets/character_main.png);
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    text-decoration: none;
+}
+
+
+
+@media(max-width:1000px){
+    .row .one{
+        background-image: url(assets/Sprinkle.svg);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 30rem;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        background-size: cover;
+        text-decoration: none;
+    }
+}
+
+
+/* ----------------------------- core team --------------------- */
+
+.team img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+
+
+
+/* -------------------- our team ----------------- */
+/* ----------------------------- technovators --------------------- */
+
+
+
+
+.techno{
+    background-image: url(assets/technobg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.techno h1{
+    font-weight: 700;
+    font-size: 8rem;
+}
+.techno h3{
+    font-weight: 350;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+.insta a{
+    text-decoration: none;
+    color: black;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.instapic{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+.myteam .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.extratop{
+    border-top: none;
+}
+
+.extrabottom{
+    border-bottom: none;
+}
+
+
+
+@media(max-width:1225px){
+    .techno h1{
+        font-size: 6rem;
+    }
+}
+@media(max-width:940px){
+    .techno h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width:550px){
+    .techno h1{
+        font-size: 3rem;
+    }
+    .techno h3{
+        font-weight: 350;
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:530px){
+    .techno h1{
+        font-size: 3rem;
+    }
+    .techno h3{
+        font-weight: 350;
+        font-size: 1rem;
+    }
+}
+@media(max-width:430px){
+    .techno h1{
+        font-size: 2rem;
+    }
+    .techno h3{
+        font-weight: 350;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* registration background */
+
+#reg-bg{
+    background-image: url(assets/reg-bg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#reg-cards{
+    background: #cbced6;
+}
+
+
+
+
+/* ----------------------------- footer --------------------- */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.footer a{
+    color: pink;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width:1176px){
+    .footer a{
+        color: pink;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
